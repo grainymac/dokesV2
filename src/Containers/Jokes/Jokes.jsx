@@ -1,10 +1,11 @@
 import React from 'react'
 import './Jokes.sass'
 
-const Jokes = () => {
+const Jokes = ({ error, joke, id }) => {
+  console.log(joke)
   return (
     <div className='joke-container'>
-      jkdfjsljdsajfkdjfdjlfj
+      <p className='joke'>{joke}</p>
     </div>
   )
 }
